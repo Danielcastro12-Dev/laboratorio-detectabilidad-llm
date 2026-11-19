@@ -1,0 +1,37 @@
+[project]
+name = "laboratorio"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "jsonschema>=4.26.0",
+    "matplotlib>=3.11.2",
+    "pydantic>=2.13.5",
+    "python-docx>=1.2.0",
+    "python-dotenv>=1.2.3",
+    "python-pptx>=1.0.2",
+    "pyyaml>=6.0.3",
+    "reportlab>=5.0.1",
+]
+
+[project.scripts]
+laboratorio = "laboratorio:main"
+
+[tool.ruff]
+exclude = ["tools/codeql", "tmp", "data", "reports", ".hermes"]
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "bandit>=1.9.4",
+    "mypy>=2.3.1",
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.16.8",
+    "semgrep>=1.141.0",
+]

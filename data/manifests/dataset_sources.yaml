@@ -1,0 +1,17 @@
+dataset: CodeSecEval
+role: primary_and_only_corpus
+provider: JasonWang1
+repository: https://huggingface.co/datasets/JasonWang1/CodeSecEval
+revision: c3ffce09269f2d7b092888efe05d070b6fcb97f5
+retrieved_at_utc: 2026-09-21T22:13:44Z
+source_repository: https://github.com/CY-SCUT-MS/CodeSecEval
+source_repository_default_branch: main
+source_repository_commit_observed: adddbfcfa9f94bf492204790a56fdf17b84f9495
+files:
+  - data/raw/CodeSecEval/README.md
+  - data/raw/CodeSecEval/data/SecEvalBase/test.jsonl
+  - data/raw/CodeSecEval/data/SecEvalPlus/test.jsonl
+sha256_manifest: data/manifests/codesec_eval_sha256.txt
+license_status: unresolved_in_dataset_readme
+license_note: The Hugging Face README states that the license is under review. The GitHub repository declares MIT, but that does not by itself establish the dataset license.
+llmseceval: excluded

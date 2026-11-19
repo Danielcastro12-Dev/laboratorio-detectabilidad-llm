@@ -1,0 +1,54 @@
+experiment_id: llm-detectability-v0.1
+language: python
+repetitions: 5
+expected_models: 3
+expected_tasks: 25
+expected_outputs: 375
+cwe_selection:
+  - CWE-22
+  - CWE-78
+  - CWE-79
+  - CWE-89
+  - CWE-502
+task_selection_manifest: data/manifests/task_selection_v0.1.csv
+corpus:
+  primary: CodeSecEval
+  external_validation: null
+  provider: JasonWang1
+  revision: c3ffce09269f2d7b092888efe05d070b6fcb97f5
+  files:
+    - data/raw/CodeSecEval/data/SecEvalBase/test.jsonl
+    - data/raw/CodeSecEval/data/SecEvalPlus/test.jsonl
+models:
+  - deepseek/deepseek-v3.2
+  - anthropic/claude-opus-4.5
+  - qwen/qwen3-coder-next
+model_manifest: configs/models_v0.1.yaml
+generation:
+  temperature: 0.2
+  top_p: 0.95
+  max_tokens: 8192
+  seed_policy: explicit_or_null
+  provider: OpenRouter
+functionality:
+  timeout_seconds: 5
+  memory_limit_mb: 256
+  statuses:
+    - functional
+    - partially_functional
+    - non_functional
+    - inconclusive
+sandbox:
+  runtime: docker
+  network: disabled
+  read_only_root: true
+  no_new_privileges: true
+  status: verified
+detectors:
+  - semgrep
+  - codeql
+  - bandit
+  - llm_auditor
+ground_truth:
+  independent_of_detector_majority: true
+  allow_inconclusive: true

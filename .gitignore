@@ -1,0 +1,58 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and secrets
+.venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Runtime artifacts and temporary files
+logs/
+outputs/
+artifacts/runtime/
+
+# Local tool state
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Personal source documents
+*.doc
+*.docx
+# ...except the official format template used to generate the final report
+!assets/format/formato_plantilla.docx
+# cascaron_tg.docx (formato de ejemplo de terceros) se usa solo en local: nunca se versiona
+
+# Research notes and unrelated exploration folders
+Forma de llamar el modelo/
+
+# Generated corpus and outputs
+outputs/
+generated/
+logs/runtime/
+reports/technical/
+tmp/
+tools/codeql/
+data/raw/corpus_v0.1/duplicates/
+
+# Internal agent state and stale backups
+.hermes/
+*.bak
+
+# Report/presentation creation (kept local only, never published)
+tools/generate_thesis_report.py
+tools/verify_thesis_report.py
+tools/generate_final_report.py
+tools/verify_final_report.py
+tools/verify_case_section.py
+assets/format/
+reports/presentation/
+HANDOFF_PROYECTO_COMPLETO.md
+PLAN_AJUSTADO_LABORATORIO_DETECTABILIDAD_LLM.md
+CAMBIOS_APROBADOS_TG.md

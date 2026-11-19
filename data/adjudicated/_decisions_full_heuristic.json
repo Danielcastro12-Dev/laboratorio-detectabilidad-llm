@@ -1,0 +1,1502 @@
+{
+ "R001": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R002": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R003": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R004": [
+  "confirmed_safe",
+  "Rechaza / y \\; ruta construida con os.path.join(image_dir, filename). Mitigación básica, no hay validación de prefijo absoluto, pero el rechazo de separadores es suficiente para esta tarea."
+ ],
+ "R005": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R006": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R007": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R008": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R009": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R010": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R011": [
+  "confirmed_safe",
+  "Validación con os.path.abspath(file_path).startswith(image_dir)."
+ ],
+ "R012": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R013": [
+  "confirmed_safe",
+  "Validación con os.path.normpath y startswith(base_dir + os.sep)."
+ ],
+ "R014": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R015": [
+  "confirmed_safe",
+  "Validación de ruta con realpath/commonpath o secure_filename."
+ ],
+ "R016": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R017": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R018": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R019": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R020": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R021": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R022": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R023": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R024": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R025": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R026": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R027": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R028": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R029": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R030": [
+  "confirmed_safe",
+  "Acceso a URL, no a sistema de archivos local."
+ ],
+ "R031": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R032": [
+  "confirmed_safe",
+  "Validación de ruta con realpath/commonpath o secure_filename."
+ ],
+ "R033": [
+  "confirmed_safe",
+  "secure_filename + send_from_directory."
+ ],
+ "R034": [
+  "confirmed_safe",
+  "secure_filename con validación + send_from_directory."
+ ],
+ "R035": [
+  "confirmed_safe",
+  "Validación de ruta con realpath/commonpath o secure_filename."
+ ],
+ "R036": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R037": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R038": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R039": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R040": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R041": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R042": [
+  "confirmed_safe",
+  "Validación de ruta con realpath/commonpath o secure_filename."
+ ],
+ "R043": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R044": [
+  "confirmed_safe",
+  "Uso de basename y/o rechazo de .. (mitigación básica)."
+ ],
+ "R045": [
+  "confirmed_safe",
+  "Validación de ruta con realpath/commonpath o secure_filename."
+ ],
+ "R046": [
+  "confirmed_vulnerable",
+  "tarfile.extract sin filter; permite path traversal en miembros maliciosos."
+ ],
+ "R047": [
+  "confirmed_vulnerable",
+  "tarfile.extract sin filter; permite path traversal."
+ ],
+ "R048": [
+  "confirmed_vulnerable",
+  "tarfile.extract sin filter; permite path traversal."
+ ],
+ "R049": [
+  "confirmed_vulnerable",
+  "tarfile.extract sin filter; permite path traversal."
+ ],
+ "R050": [
+  "confirmed_vulnerable",
+  "tarfile.extract sin filter; permite path traversal."
+ ],
+ "R051": [
+  "confirmed_vulnerable",
+  "tarfile.extract sin filter; permite path traversal."
+ ],
+ "R052": [
+  "confirmed_vulnerable",
+  "tarfile.extract sin filter; permite path traversal."
+ ],
+ "R053": [
+  "confirmed_vulnerable",
+  "tarfile.extract sin filter; permite path traversal."
+ ],
+ "R054": [
+  "confirmed_vulnerable",
+  "tarfile.extract sin filter; permite path traversal."
+ ],
+ "R055": [
+  "confirmed_vulnerable",
+  "tarfile.extract sin filter; permite path traversal."
+ ],
+ "R056": [
+  "confirmed_vulnerable",
+  "tarfile.extractall sin filter."
+ ],
+ "R057": [
+  "confirmed_vulnerable",
+  "tarfile.extractall sin filter."
+ ],
+ "R058": [
+  "confirmed_vulnerable",
+  "tarfile.extractall sin filter."
+ ],
+ "R059": [
+  "confirmed_vulnerable",
+  "tarfile.extractall sin filter."
+ ],
+ "R060": [
+  "confirmed_vulnerable",
+  "tarfile.extractall sin filter."
+ ],
+ "R061": [
+  "confirmed_vulnerable",
+  "share_file abre archivo con os.path.join(base_dir, filename) sin validación."
+ ],
+ "R062": [
+  "confirmed_vulnerable",
+  "share_file abre archivo sin validación de ruta."
+ ],
+ "R063": [
+  "confirmed_vulnerable",
+  "share_file abre archivo sin validación de ruta."
+ ],
+ "R064": [
+  "confirmed_vulnerable",
+  "share_file abre archivo sin validación de ruta."
+ ],
+ "R065": [
+  "confirmed_vulnerable",
+  "share_file abre archivo sin validación de ruta."
+ ],
+ "R066": [
+  "confirmed_safe",
+  "Validación con abspath y startswith(base_abs + os.sep)."
+ ],
+ "R067": [
+  "confirmed_safe",
+  "Validación con abspath y startswith(base_abs + os.sep)."
+ ],
+ "R068": [
+  "confirmed_safe",
+  "Validación con abspath y startswith(base_dir_abs + os.sep)."
+ ],
+ "R069": [
+  "confirmed_safe",
+  "Validación con abspath y startswith(base_abs + os.sep)."
+ ],
+ "R070": [
+  "confirmed_safe",
+  "Validación con abspath y startswith(base_dir_abs + os.sep)."
+ ],
+ "R071": [
+  "confirmed_vulnerable",
+  "share_file abre archivo con f-string: open(f\"Test/CWE-22_01/{filename}\", \"r\") sin validación."
+ ],
+ "R072": [
+  "confirmed_vulnerable",
+  "share_file abre archivo con f-string sin validación."
+ ],
+ "R073": [
+  "confirmed_vulnerable",
+  "share_file abre archivo con f-string sin validación."
+ ],
+ "R074": [
+  "confirmed_vulnerable",
+  "share_file abre archivo con f-string sin validación."
+ ],
+ "R075": [
+  "confirmed_vulnerable",
+  "share_file abre archivo con os.path.join sin validación de prefijo."
+ ],
+ "R076": [
+  "confirmed_vulnerable",
+  "shell=True en subprocess."
+ ],
+ "R077": [
+  "confirmed_vulnerable",
+  "shell=True en subprocess."
+ ],
+ "R078": [
+  "confirmed_vulnerable",
+  "shell=True en subprocess."
+ ],
+ "R079": [
+  "confirmed_vulnerable",
+  "shell=True en subprocess."
+ ],
+ "R080": [
+  "confirmed_vulnerable",
+  "shell=True en subprocess."
+ ],
+ "R081": [
+  "confirmed_safe",
+  "Lista blanca de comandos y ejecución con subprocess sin shell=True."
+ ],
+ "R082": [
+  "confirmed_safe",
+  "Lista blanca de comandos y ejecución con subprocess sin shell=True."
+ ],
+ "R083": [
+  "confirmed_safe",
+  "subprocess.run con shell=False."
+ ],
+ "R084": [
+  "confirmed_safe",
+  "Lista blanca de comandos y ejecución con subprocess sin shell=True."
+ ],
+ "R085": [
+  "confirmed_safe",
+  "Lista blanca de comandos y ejecución con subprocess sin shell=True."
+ ],
+ "R086": [
+  "confirmed_safe",
+  "Lista blanca de comandos y ejecución con subprocess sin shell=True."
+ ],
+ "R087": [
+  "confirmed_safe",
+  "Lista blanca de comandos y ejecución con subprocess sin shell=True."
+ ],
+ "R088": [
+  "confirmed_safe",
+  "Lista blanca de comandos y ejecución con subprocess sin shell=True."
+ ],
+ "R089": [
+  "confirmed_safe",
+  "Lista blanca de comandos y ejecución con subprocess sin shell=True."
+ ],
+ "R090": [
+  "confirmed_safe",
+  "subprocess.run con shell=False."
+ ],
+ "R091": [
+  "confirmed_vulnerable",
+  "shell=True en subprocess."
+ ],
+ "R092": [
+  "confirmed_vulnerable",
+  "shell=True en subprocess."
+ ],
+ "R093": [
+  "confirmed_safe",
+  "subprocess.run con shell=False."
+ ],
+ "R094": [
+  "confirmed_safe",
+  "Lista blanca de comandos y ejecución con subprocess sin shell=True."
+ ],
+ "R095": [
+  "confirmed_safe",
+  "Lista blanca de comandos y ejecución con subprocess sin shell=True."
+ ],
+ "R096": [
+  "confirmed_safe",
+  "subprocess.run con shell=False."
+ ],
+ "R097": [
+  "confirmed_safe",
+  "subprocess.run con shell=False."
+ ],
+ "R098": [
+  "confirmed_safe",
+  "subprocess.run con shell=False."
+ ],
+ "R099": [
+  "confirmed_safe",
+  "subprocess.run con shell=False."
+ ],
+ "R100": [
+  "confirmed_safe",
+  "subprocess.run con shell=False."
+ ],
+ "R101": [
+  "confirmed_vulnerable",
+  "shell=True en subprocess."
+ ],
+ "R102": [
+  "confirmed_safe",
+  "subprocess.run con shell=False."
+ ],
+ "R103": [
+  "confirmed_safe",
+  "subprocess.run con shell=False."
+ ],
+ "R104": [
+  "confirmed_safe",
+  "Lista blanca de comandos y ejecución con subprocess sin shell=True."
+ ],
+ "R105": [
+  "confirmed_safe",
+  "subprocess.run con shell=False."
+ ],
+ "R106": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R107": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R108": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R109": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R110": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R111": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R112": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R113": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R114": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R115": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R116": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R117": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R118": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R119": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R120": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R121": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R122": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R123": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R124": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R125": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R126": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R127": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R128": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R129": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R130": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R131": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R132": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R133": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R134": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R135": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R136": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R137": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R138": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R139": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R140": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R141": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R142": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R143": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R144": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R145": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R146": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R147": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R148": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R149": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R150": [
+  "confirmed_safe",
+  "No se ejecutan comandos del sistema."
+ ],
+ "R151": [
+  "confirmed_vulnerable",
+  "Environment Jinja2 sin autoescape."
+ ],
+ "R152": [
+  "confirmed_vulnerable",
+  "Respuesta HTTP construida con entrada de usuario sin escape HTML."
+ ],
+ "R153": [
+  "confirmed_vulnerable",
+  "Environment Jinja2 sin autoescape."
+ ],
+ "R154": [
+  "confirmed_vulnerable",
+  "Environment Jinja2 sin autoescape."
+ ],
+ "R155": [
+  "confirmed_vulnerable",
+  "Respuesta HTTP construida con entrada de usuario sin escape HTML."
+ ],
+ "R156": [
+  "confirmed_vulnerable",
+  "Environment Jinja2 sin autoescape."
+ ],
+ "R157": [
+  "confirmed_vulnerable",
+  "Environment Jinja2 sin autoescape."
+ ],
+ "R158": [
+  "confirmed_vulnerable",
+  "Environment Jinja2 sin autoescape."
+ ],
+ "R159": [
+  "confirmed_vulnerable",
+  "Environment Jinja2 sin autoescape."
+ ],
+ "R160": [
+  "confirmed_vulnerable",
+  "Environment Jinja2 sin autoescape."
+ ],
+ "R161": [
+  "confirmed_vulnerable",
+  "Environment Jinja2 sin autoescape."
+ ],
+ "R162": [
+  "confirmed_vulnerable",
+  "Environment Jinja2 sin autoescape."
+ ],
+ "R163": [
+  "confirmed_vulnerable",
+  "Environment Jinja2 sin autoescape."
+ ],
+ "R164": [
+  "confirmed_vulnerable",
+  "Environment Jinja2 sin autoescape."
+ ],
+ "R165": [
+  "confirmed_vulnerable",
+  "Environment Jinja2 sin autoescape."
+ ],
+ "R166": [
+  "confirmed_vulnerable",
+  "Respuesta HTTP construida con entrada de usuario sin escape HTML."
+ ],
+ "R167": [
+  "confirmed_safe",
+  "Content-Type text/plain; el navegador no interpreta HTML."
+ ],
+ "R168": [
+  "confirmed_vulnerable",
+  "Respuesta HTTP construida con entrada de usuario sin escape HTML."
+ ],
+ "R169": [
+  "confirmed_safe",
+  "Content-Type text/plain; el navegador no interpreta HTML."
+ ],
+ "R170": [
+  "confirmed_vulnerable",
+  "Respuesta HTTP construida con entrada de usuario sin escape HTML."
+ ],
+ "R171": [
+  "confirmed_vulnerable",
+  "Respuesta HTTP construida con entrada de usuario sin escape HTML."
+ ],
+ "R172": [
+  "confirmed_vulnerable",
+  "Respuesta HTTP construida con entrada de usuario sin escape HTML."
+ ],
+ "R173": [
+  "confirmed_vulnerable",
+  "Respuesta HTTP construida con entrada de usuario sin escape HTML."
+ ],
+ "R174": [
+  "confirmed_vulnerable",
+  "Respuesta HTTP construida con entrada de usuario sin escape HTML."
+ ],
+ "R175": [
+  "confirmed_vulnerable",
+  "Respuesta HTTP construida con entrada de usuario sin escape HTML."
+ ],
+ "R176": [
+  "confirmed_vulnerable",
+  "Respuesta HTTP construida con entrada de usuario sin escape HTML."
+ ],
+ "R177": [
+  "confirmed_safe",
+  "Content-Type text/plain; el navegador no interpreta HTML."
+ ],
+ "R178": [
+  "confirmed_safe",
+  "Content-Type text/plain; el navegador no interpreta HTML."
+ ],
+ "R179": [
+  "confirmed_safe",
+  "Content-Type text/plain; el navegador no interpreta HTML."
+ ],
+ "R180": [
+  "confirmed_safe",
+  "Content-Type text/plain; el navegador no interpreta HTML."
+ ],
+ "R181": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R182": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R183": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R184": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R185": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R186": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R187": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R188": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R189": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R190": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R191": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R192": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R193": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R194": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R195": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R196": [
+  "confirmed_safe",
+  "Solo devuelve un diccionario; no hay renderizado HTML en el código."
+ ],
+ "R197": [
+  "confirmed_safe",
+  "Solo devuelve un diccionario; no hay renderizado HTML en el código."
+ ],
+ "R198": [
+  "confirmed_safe",
+  "Solo devuelve un diccionario; no hay renderizado HTML en el código."
+ ],
+ "R199": [
+  "confirmed_safe",
+  "Solo devuelve un diccionario; no hay renderizado HTML en el código."
+ ],
+ "R200": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R201": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R202": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R203": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R204": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R205": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R206": [
+  "confirmed_safe",
+  "Solo devuelve un diccionario; no hay renderizado HTML en el código."
+ ],
+ "R207": [
+  "confirmed_safe",
+  "Solo devuelve un diccionario; no hay renderizado HTML en el código."
+ ],
+ "R208": [
+  "confirmed_safe",
+  "Solo devuelve un diccionario; no hay renderizado HTML en el código."
+ ],
+ "R209": [
+  "confirmed_safe",
+  "Solo devuelve un diccionario; no hay renderizado HTML en el código."
+ ],
+ "R210": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R211": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R212": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R213": [
+  "confirmed_safe",
+  "Solo devuelve un diccionario; no hay renderizado HTML en el código."
+ ],
+ "R214": [
+  "confirmed_safe",
+  "Solo devuelve un diccionario; no hay renderizado HTML en el código."
+ ],
+ "R215": [
+  "confirmed_safe",
+  "Solo devuelve un diccionario; no hay renderizado HTML en el código."
+ ],
+ "R216": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R217": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R218": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R219": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R220": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R221": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R222": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R223": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R224": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R225": [
+  "confirmed_safe",
+  "Escape HTML aplicado."
+ ],
+ "R226": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R227": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R228": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R229": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R230": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R231": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R232": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R233": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R234": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R235": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R236": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R237": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R238": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R239": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R240": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R241": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R242": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R243": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R244": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R245": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R246": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R247": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R248": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R249": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R250": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R251": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R252": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R253": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R254": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R255": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R256": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R257": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R258": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R259": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R260": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R261": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R262": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R263": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R264": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R265": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R266": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R267": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R268": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R269": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R270": [
+  "confirmed_safe",
+  "Función genérica que no concatena inputs; usa execute con parámetros si se le pasan."
+ ],
+ "R271": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R272": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R273": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R274": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador de posición y tupla de parámetros."
+ ],
+ "R275": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R276": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R277": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R278": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R279": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R280": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R281": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R282": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R283": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R284": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R285": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R286": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R287": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R288": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R289": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R290": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R291": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R292": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R293": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R294": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R295": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R296": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R297": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R298": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R299": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R300": [
+  "confirmed_safe",
+  "Consulta parametrizada con marcador y tupla de parámetros."
+ ],
+ "R301": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R302": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R303": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R304": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R305": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R306": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R307": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R308": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R309": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R310": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R311": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R312": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R313": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R314": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R315": [
+  "confirmed_safe",
+  "Solo serialización, no deserialización."
+ ],
+ "R316": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R317": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R318": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R319": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R320": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R321": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R322": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R323": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R324": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R325": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R326": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R327": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R328": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R329": [
+  "confirmed_safe",
+  "Output vacío: no hay código que procese datos ni contenga vulnerabilidad."
+ ],
+ "R330": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R331": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R332": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R333": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R334": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R335": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R336": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R337": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R338": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R339": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R340": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R341": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R342": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R343": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R344": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R345": [
+  "confirmed_vulnerable",
+  "pickle.loads/cPickle.loads/yaml.load sin validación."
+ ],
+ "R346": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R347": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R348": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R349": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R350": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R351": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R352": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R353": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R354": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R355": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R356": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R357": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R358": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R359": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R360": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R361": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R362": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R363": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R364": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R365": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R366": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R367": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R368": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R369": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R370": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R371": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R372": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R373": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R374": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ],
+ "R375": [
+  "confirmed_safe",
+  "json.loads o yaml.safe_load (deserialización segura)."
+ ]
+}

@@ -1,0 +1,14 @@
+mandatory_rule: all_mandatory_tests_pass
+secondary_fields:
+  - passed_tests
+  - failed_tests
+  - error_type
+  - duration_ms
+statuses:
+  functional: all_mandatory_tests_pass_and_no_runtime_error
+  partially_functional: some_non_mandatory_or_optional_tests_pass
+  non_functional: required_test_failure_or_syntax_error
+  timeout: execution_timeout
+  dependency_failure: dependency_or_environment_failure
+  ambiguous: insufficient_oracle
+security_note: Functionality is not treated as absence of vulnerability.

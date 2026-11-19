@@ -1,0 +1,26 @@
+selection_order,subset,line,task_id,cwe,entry_point,ast_Insecure Code,ast_Secure Code,ast_Test,ast_Test-FP,ast_Test-SP
+1,SecEvalBase,11,CWE-022_author_1.py,CWE-22,deleteImage,ok,ok,ok,ok,ok
+2,SecEvalBase,12,CWE-022_author_2.py,CWE-22,readJSON,ok,ok,ok,ok,ok
+3,SecEvalBase,13,CWE-022_codeql_1.py,CWE-22,getFileData,ok,ok,ok,ok,ok
+4,SecEvalBase,14,CWE-022_codeql_2.py,CWE-22,extract_tar,ok,ok,ok,ok,ok
+5,SecEvalPlus,98,CWE-22_01,CWE-22,share_file,ok,ok,ok,ok,ok
+6,SecEvalBase,15,CWE-078_author_1.py,CWE-78,executeCommand,ok,ok,ok,ok,ok
+7,SecEvalBase,16,CWE-078_codeql_1.py,CWE-78,executeCommand,ok,ok,ok,ok,ok
+8,SecEvalPlus,41,CWE-78_01,CWE-78,find_files,ok,ok,ok,ok,ok
+9,SecEvalPlus,42,CWE-78_02,CWE-78,count_lines,ok,ok,ok,ok,ok
+10,SecEvalPlus,43,CWE-78_03,CWE-78,process_input_file,ok,ok,ok,ok,ok
+11,SecEvalBase,18,CWE-079_codeql_1.py,CWE-79,render_response_from_env,ok,ok,ok,ok,ok
+12,SecEvalBase,17,CWE-079_codeql_2.py,CWE-79,name,ok,ok,ok,ok,ok
+13,SecEvalPlus,106,CWE-79_01,CWE-79,generate_post,ok,ok,ok,ok,ok
+14,SecEvalPlus,107,CWE-79_02,CWE-79,create_question,ok,ok,ok,ok,ok
+15,SecEvalPlus,108,CWE-79_03,CWE-79,create_article,ok,ok,ok,ok,ok
+16,SecEvalBase,20,CWE-089_author_1.py,CWE-89,remove_user,ok,ok,ok,ok,ok
+17,SecEvalBase,21,CWE-089_codeql_1.py,CWE-89,show_user,ok,ok,ok,ok,ok
+18,SecEvalPlus,49,CWE-89_01,CWE-89,execute_query,ok,ok,ok,ok,ok
+19,SecEvalPlus,50,CWE-89_02,CWE-89,get_user_data,ok,ok,ok,ok,ok
+20,SecEvalPlus,51,CWE-89_03,CWE-89,get_book_details,ok,ok,ok,ok,ok
+21,SecEvalBase,75,CWE-502_author_1.py,CWE-502,makePickleData,ok,ok,ok,ok,ok
+22,SecEvalBase,1,CWE-502_codeql_1.py,CWE-502,getPickleData,ok,ok,ok,ok,ok
+23,SecEvalBase,76,CWE-502_mitre_1.py,CWE-502,confirmAuth,ok,ok,ok,ok,ok
+24,SecEvalBase,2,CWE-502_sonar_1.py,CWE-502,yaml_load,ok,ok,ok,ok,ok
+25,SecEvalPlus,25,CWE-502_01,CWE-502,load_user_session,ok,ok,ok,ok,ok

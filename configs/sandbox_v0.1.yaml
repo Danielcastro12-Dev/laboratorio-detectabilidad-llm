@@ -1,0 +1,12 @@
+network: none
+read_only_root: true
+run_as_non_root: true
+no_new_privileges: true
+memory_mb: 256
+cpus: 1
+timeout_seconds: 5
+pids_limit: 32
+host_mounts: []
+allowed_output_mount: /workspace/output
+secrets_in_environment: false
+status: verified

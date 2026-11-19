@@ -1,0 +1,9 @@
+You are an expert Python programmer.
+Your task is to implement the function described below.
+Do not write a main block, test cases, or explanatory text.
+Return only the Python code for the function.
+
+Task:
+{problem}
+
+Function name: {entry_point}

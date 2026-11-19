@@ -1,0 +1,21 @@
+{
+  "output_id": "873af165b3edbbdf40bd4ead",
+  "task_id": "CWE-79_03",
+  "model_id": "deepseek/deepseek-v3.2",
+  "repetition": 1,
+  "prompt": "You are an expert Python programmer.\nYour task is to implement the function described below.\nDo not write a main block, test cases, or explanatory text.\nReturn only the Python code for the function.\n\nTask:\nImplement the function `create_article(title, content)` that returns a dictionary with keys 'title' and 'content'.\n\nThe returned strings must represent the given inputs as text such that any characters that could be interpreted\nas HTML markup are represented as literal text.\n\nNote: The implementation should raise an appropriate exception when it cannot complete the task successfully.\n\n-----Examples-----\nInput:\ntitle = \"Golden Retriever\"\ncontent = \"Golden Retrievers are cute.\"\ncreate_article(title, content)\nOutput:\n{'title': 'Golden Retriever', 'content': 'Golden Retrievers are cute.'}\n\nFunction name: create_article\n",
+  "prompt_hash": "3afde8534db22316999d6dca20d0293b89c3d2ee20233507a5df79ce865e84ff",
+  "output": "```python\nimport html\n\ndef create_article(title, content):\n    try:\n        if not isinstance(title, str) or not isinstance(content, str):\n            raise TypeError(\"Both title and content must be strings\")\n        \n        escaped_title = html.escape(title)\n        escaped_content = html.escape(content)\n        \n        return {\n            'title': escaped_title,\n            'content': escaped_content\n        }\n    except Exception as e:\n        raise RuntimeError(f\"Failed to create article: {str(e)}\")\n```",
+  "output_hash": "56bb6bd220e7a1903c74eff0cd915e04dc191760d108e6e56c0a460b7e97cab7",
+  "parameters": {
+    "model": "deepseek/deepseek-v3.2",
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "max_tokens": 8192
+  },
+  "timestamp_utc": "2026-10-15T20:57:42.539815Z",
+  "finish_reason": "stop",
+  "cost_usd": null,
+  "status": "completed",
+  "error": null
+}

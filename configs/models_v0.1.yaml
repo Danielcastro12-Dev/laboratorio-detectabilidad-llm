@@ -1,0 +1,53 @@
+models:
+  - id: deepseek/deepseek-v3.2
+    family: general_common_use
+    provider: openrouter
+    context_length: 163840
+    enabled: true
+    cost:
+      prompt_usd: 0.000000269
+      completion_usd: 0.0000004
+  - id: anthropic/claude-opus-4.5
+    family: general_high_performance
+    provider: openrouter
+    context_length: 200000
+    enabled: true
+    cost:
+      prompt_usd: 0.000005
+      completion_usd: 0.000025
+  - id: qwen/qwen3-coder-next
+    family: specialized_code
+    provider: openrouter
+    context_length: 262144
+    enabled: true
+    cost:
+      prompt_usd: 0.00000012
+      completion_usd: 0.0000008
+auditor_model:
+  id: nvidia/nemotron-3-ultra-550b-a55b:free
+  provider: openrouter
+  temperature: 0
+  context_length: 1000000
+  enabled: true
+  cost:
+    prompt_usd: 0
+    completion_usd: 0
+snapshot:
+  source: data/external/openrouter_models_authenticated.json
+  sha256: d312fd8d0486049a20661a4ff44321ea570914f1f53ffcc362a0aaf38ff1edad
+  retrieved_at_utc: 2026-09-21T22:13:44Z
+funding_note: >
+  The three generator models are paid endpoints on OpenRouter.
+  The current API key is on the free tier without balance.
+  Pilot generation requires adding funds or switching to free alternatives.
+  The auditor endpoint is free and has been verified to respond.
+cost_estimate:
+  source: pilot_v0.1
+  total_outputs: 375
+  estimated_usd: 3.75
+  recommended_top_up_usd: 5.00
+  notes:
+    - deepseek/deepseek-v3.2 ~ $0.01
+    - anthropic/claude-opus-4.5 ~ $1.29 (observed), up to $25.64 worst case if 8k completions
+    - qwen/qwen3-coder-next ~ $0.02
+    - conservative buffer 50% included in recommendation

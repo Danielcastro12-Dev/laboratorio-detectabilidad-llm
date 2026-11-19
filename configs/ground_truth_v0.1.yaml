@@ -1,0 +1,19 @@
+primary_evidence:
+  - dataset_reference_oracle
+  - functionality_tests
+  - dynamic_security_tests
+  - blind_manual_adjudication
+excluded_as_primary_truth:
+  - detector_majority
+  - single_detector_result
+statuses:
+  - confirmed_vulnerable
+  - confirmed_safe
+  - inconclusive
+matching:
+  location_tolerance_lines: 3
+  same_cwe_required: true
+manual_review:
+  blind_model_identity: true
+  record_evidence: true
+  record_reviewer_confidence: true

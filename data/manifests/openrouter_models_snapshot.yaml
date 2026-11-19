@@ -1,0 +1,7 @@
+source: https://openrouter.ai/api/v1/models
+retrieved_at_utc: 2026-09-21T22:13:44Z
+model_count: 443
+sha256: 805ccd85e9984f125882bd62a313997d0f787c0a880b36fd08a85d542a7a7213
+snapshot: data/external/openrouter_models_snapshot.json
+selection_status: pending
+selection_rule: IDs must be exact provider/model identifiers; no latest aliases
